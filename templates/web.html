@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TWA</title>
+    <style>
+          fieldset{
+            width: fit-content;
+            background-image:url(' https://th.bing.com/th/id/OIP.29g5x1_a6kp87FWAhim6EAHaKX?pid=ImgDet&rs=1');
+
+          }
+        
+    </style>
+</head>
+<body>
+    <center>
+        <fieldset>
+        <legend >TOPIC WEBPAGE ACCESRECORDS </legend>
+        <form action="" method="POST" enctype="multipart/form-data" id="a">
+             {% csrf_token %}
+                  {{tfo.as_p}}
+                  {{wfo.as_p}}
+                  {{afo.as_p}}
+
+             <input type="submit" value="submit">
+
+
+        </form>
+    </fieldset>
+    </center>
+</body>
+</html>
